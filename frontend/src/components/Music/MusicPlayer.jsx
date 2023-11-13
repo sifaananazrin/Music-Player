@@ -2,6 +2,7 @@ import React from "react";
 import "./MusicPlayer.css";
 
 const MusicPlayer = ({ albumData }) => {
+  console.log(albumData)
   return (
     <div className="music-player">
       {albumData &&
