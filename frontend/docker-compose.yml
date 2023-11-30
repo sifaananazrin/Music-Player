@@ -8,6 +8,7 @@ services:
      - 8080:8080
    working_dir: /src/app
    volumes:
+   
      - type: bind
        source: ./
        target: /src/app

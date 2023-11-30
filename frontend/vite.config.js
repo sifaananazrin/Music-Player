@@ -8,7 +8,7 @@ export default defineConfig({
     host: true,
     port: 8080, // This is the port which we will use in docker
    watch: {
-       usePolling: true
-     }
+    usePolling: true   
+    }
   }
 })
