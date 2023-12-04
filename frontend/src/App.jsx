@@ -1,15 +1,15 @@
 import React from "react";
-import SearchBar from "./components/Utility/SearchBar";
-import NavigationBar from "./components/Utility/NavigationBar";
-import ImageGrid from "./components/Music/ImageGrid";
-import MusicApp from "./components/Music/MusicApp";
+import { Routes, Route } from "react-router-dom";
+import HomeScreen from "./components/Music/HomeScreen";
+import MusicDetails from "./components/Music/Musics/MusicDeatils";
+
 const App = () => {
   return (
     <>
-      <SearchBar />
-      <NavigationBar />
-      <ImageGrid />
-      <MusicApp/>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/music" element={<MusicDetails />} />
+      </Routes>
     </>
   );
 };

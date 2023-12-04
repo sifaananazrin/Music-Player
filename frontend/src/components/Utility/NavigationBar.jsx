@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
@@ -17,6 +18,9 @@ const NavigationBar = () => {
       <div className="w-20 sm:w-28 text-zinc-400 text-base font-normal font-['Roboto'] leading-normal mt-2">
         Top Artists
       </div>
+      <Link to="/music" className="w-20 sm:w-28 text-zinc-400 text-base font-normal font-['Roboto'] leading-normal mt-2">
+        music
+      </Link>
     </div>
   );
 };
